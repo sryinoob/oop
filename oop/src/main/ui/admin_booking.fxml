@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="338.0" prefWidth="404.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CBookingController">
+    <children>
+        <AnchorPane layoutX="-6.0" layoutY="1.0" prefHeight="434.0" prefWidth="412.0">
+            <children>
+                <CheckBox fx:id="A1" layoutX="64.0" layoutY="154.0" mnemonicParsing="false" onAction="#checked" prefHeight="21.0" prefWidth="51.0" text="1" AnchorPane.bottomAnchor="259.0" AnchorPane.rightAnchor="297.0" />
+                <CheckBox fx:id="A16" layoutX="22.0" layoutY="181.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="16" />
+                <CheckBox fx:id="A13" layoutX="22.0" layoutY="284.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="13" />
+                <CheckBox fx:id="A2" layoutX="127.0" layoutY="154.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="2" />
+                <CheckBox fx:id="A6" layoutX="255.0" layoutY="261.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="6" />
+                <CheckBox fx:id="A12" layoutX="22.0" layoutY="319.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="12" />
+                <CheckBox fx:id="A15" layoutX="22.0" layoutY="218.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="15" />
+                <CheckBox fx:id="A7" layoutX="288.0" layoutY="284.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="7" />
+                <CheckBox fx:id="C3" layoutX="22.0" layoutY="250.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" />
+                <CheckBox fx:id="A4" layoutX="174.0" layoutY="229.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="4" />
+                <CheckBox fx:id="A5" layoutX="207.0" layoutY="261.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="5" />
+                <CheckBox fx:id="A3" layoutX="174.0" layoutY="192.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="3" />
+                <Label fx:id="selectBooking" layoutX="286.0" layoutY="159.0" text="Selected" />
+                <Label fx:id="availableBooking" layoutX="284.0" layoutY="184.0" text="Available" />
+                <Label fx:id="projection" layoutX="36.0" layoutY="26.0" prefHeight="34.0" prefWidth="340.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Label>
+                <Rectangle fx:id="screenShapeCBooking" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="24.0" layoutX="130.0" layoutY="26.0" stroke="BLACK" strokeType="INSIDE" width="153.0" />
+                <Label fx:id="bookinglbl" layoutX="179.0" layoutY="28.0" text="Booking" />
+                <Button fx:id="backCBooking" layoutX="53.0" layoutY="389.0" mnemonicParsing="false" onAction="#back" text="Back" />
+                <Button fx:id="homeCBooking" layoutX="294.0" layoutY="389.0" mnemonicParsing="false" onAction="#home" text="Home" />
+                <Button fx:id="confirmCBooking" layoutX="130.0" layoutY="389.0" mnemonicParsing="false" onAction="#confirmBooking" text="Confirm Booking" />
+                <Label fx:id="unavailableBooking" layoutX="282.0" layoutY="205.0" text="Unavailable" />
+                <CheckBox fx:id="availableSeatBooking" disable="true" layoutX="255.0" layoutY="184.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="17.0" />
+                <CheckBox fx:id="selectSeatBooking" disable="true" layoutX="255.0" layoutY="159.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="17.0" selected="true" />
+                <CheckBox fx:id="unavailableSeatBooking" contentDisplay="TOP" disable="true" indeterminate="true" layoutX="255.0" layoutY="205.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="21.0" textFill="#e00c0c" />
+                <Label fx:id="A14" layoutX="21.0" layoutY="250.0" prefHeight="17.0" prefWidth="32.0" />
+                <Label fx:id="unavailable" layoutX="48.0" layoutY="250.0" prefHeight="17.0" prefWidth="32.0" text="14" />
+            <ComboBox fx:id="seatPicker" layoutX="14.0" layoutY="60.0" onAction="#pickSeat" prefWidth="150.0" promptText="seatPicker" visibleRowCount="5" />
+            <CheckBox fx:id="A8" layoutX="288.0" layoutY="319.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="8" />
+            <CheckBox fx:id="A11" layoutX="101.0" layoutY="340.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="11" />
+            <CheckBox fx:id="A10" layoutX="165.0" layoutY="340.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="10" />
+            <CheckBox fx:id="A9" layoutX="231.0" layoutY="340.0" mnemonicParsing="false" onAction="#checked" prefHeight="17.0" prefWidth="17.0" text="9" />
+            <CheckBox fx:id="lockedseatBooking" disable="true" layoutX="255.0" layoutY="229.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="17.0" textFill="#d67f04" />
+            <Label fx:id="lockedBooking" layoutX="282.0" layoutY="229.0" text="Admin locked" />
+            <Button fx:id="seatLock" layoutX="260.0" layoutY="60.0" mnemonicParsing="false" onAction="#lockseat" text="Seat Lock" />
+            <Button fx:id="bookingList" layoutX="260.0" layoutY="96.0" mnemonicParsing="false" onAction="#openBookingList" text="Booking List" />
+            <DatePicker fx:id="bookingDate" layoutX="11.0" layoutY="96.0" onAction="#pickDate" prefHeight="31.0" prefWidth="153.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
